@@ -1,0 +1,178 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Main Styling*/
+:root {
+    --white-paragraphs:hsla(0, 0%, 100%, 0.75);
+    --primary-bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--very-light-gray);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white-paragraphs);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    font-weight: 700;
+}
+
+
+/*Utility Styles*/
+.container {
+    background: #fff;
+    width: 870px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Grid*/
+.container .card-1 {
+    grid-column: 1/2;
+    
+    background: var(--primary-bright-orange);
+    padding: 40px;
+    border-radius: 10px 0 0 10px;
+
+    display: grid;
+    grid-template-rows: .5fr .5fr 1fr 1fr;
+    animation: fromLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.card-1 .boton {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-1 .boton button {
+    color: var(--primary-bright-orange);
+}
+
+.container .card-2 {
+    grid-column: 2/3;
+    padding: 40px;
+    background: var(--dark-cyan);
+
+    display: grid;
+    grid-template-rows: .5fr .5fr 1fr 1fr;
+    animation: fromTop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.card-2 .boton {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-2 .boton button {
+    color: var(--dark-cyan);
+}
+
+.container .card-3 {
+    grid-column: 3/4;
+    padding: 40px;
+    border-radius: 0 10px 10px 0;
+    background: var(--Very-dark-cyan);
+
+    display: grid;
+    grid-template-rows: .5fr .5fr 1fr 1fr;
+    animation: fromRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.card-3 .boton {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-3 .boton button {
+    color: var(--Very-dark-cyan);
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--very-light-gray);
+    font-weight: 400;
+    height: 36px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: .25s ease-out;
+}
+
+.card-1 button:hover {
+    border: #fff solid 2px;
+    background: var(--primary-bright-orange);
+    color: #fff;
+}
+
+.card-2 button:hover {
+    border: #fff solid 2px;
+    background: var(--dark-cyan);
+    color: #fff;
+}
+
+.card-3 button:hover {
+    border: #fff solid 2px;
+    background: var(--Very-dark-cyan);
+    color: #fff;
+}
+/* Animations */
+@keyframes fromRight {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fromLeft {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fromTop {
+    from {
+      transform: translateY(-100px);
+      opacity: 0.1;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
