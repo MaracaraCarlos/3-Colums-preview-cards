@@ -22,11 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![active-states](https://github.com/MaracaraCarlos/Advice-generator-app/assets/113530553/296be224-df5e-4a48-9c02-c5f033c27f4f)
+![desktop-design](https://github.com/MaracaraCarlos/3-Colums-preview-cards/assets/113530553/d1f630b3-4a84-4a1b-af00-1b1cb6dca6cd)
 
 ### Link
 
-- Solution URL: [solution](https://github.com/MaracaraCarlos/Advice-generator-app)
+- Solution URL: [solution](https://github.com/MaracaraCarlos/3-Colums-preview-cards)
 - Live Site URL: [Netlify](https://advice-generator-cems.netlify.app/)
 
 ## My process
